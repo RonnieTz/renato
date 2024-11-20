@@ -5,7 +5,7 @@ import NavbarItem from './NavbarItem';
 
 const Navbar = () => {
   return (
-    <div className="navbar-container">
+    <nav className="navbar-container">
       <Logo />
       <NavbarItem title="home" />
       <NavbarItem title="about" />
@@ -13,7 +13,7 @@ const Navbar = () => {
       <NavbarItem title="gallery" />
       <NavbarItem title="contact" />
       <SidebarButton />
-    </div>
+    </nav>
   );
 };
 export default Navbar;

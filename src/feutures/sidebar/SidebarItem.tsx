@@ -1,6 +1,6 @@
 import { Page } from '../../redux/initialState';
 import { useRedux } from '../../hooks/useRedux';
-import { setPage, setSidebarIsOpen } from '../../redux/appSlice';
+import { setPage } from '../../redux/appSlice';
 
 type Props = {
   title: Page;
@@ -11,7 +11,6 @@ const SidebarItem = ({ title }: Props) => {
   const { page } = useSelectorTyped((state) => state.app);
   const handleClick = () => {
     dispatch(setPage(title));
-    dispatch(setSidebarIsOpen());
   };
   return (
     <a
